@@ -14,10 +14,8 @@ Installation
 ============
 
 .. warning:: 
-   **Future Installation Option**  
-   This installation method is **not yet available**. We are working to make this feature accessible in a future release.  
-
-   For now, please refer to the section `How to Jupyter <configure/configuration.html>`_  for detailed instructions.
+   **Beta Version**  
+   This project is currently in **beta version**. and still has work in progress. We recommend referring to the section  `How to Jupyter <configure/configuration.html>`_  for detailed instructions.
 
 To install the project, you need to clone the repository and install the required dependencies. You will need to have Python 3.8 or higher installed on your system. Before installing the project, we recommend creating a virtual environment to avoid conflicts with other Python projects:
 
