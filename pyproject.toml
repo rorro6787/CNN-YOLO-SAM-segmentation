@@ -17,6 +17,7 @@ dependencies = [
     "ultralytics", 
     "matplotlib",
     "jupyterlab",
+    "gdown"
 ]
 requires-python = ">=3.8"
 authors = [

@@ -9,6 +9,10 @@ import torch._dynamo
 import torch
 import glob
 
+import os
+import gdown
+import zipfile
+
 from cnn_methods import utils
 
 torch._dynamo.config.suppress_errors = True
@@ -16,6 +20,33 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 torch.cuda.is_available()
 
 labels = ["freshapples", "freshbanana", "freshoranges", "rottenapples", "rottenbanana", "rottenoranges"]
+
+def download_dataset_from_cloud(url: str, folder_name: str) -> None:
+    """
+    Downloads and extracts a dataset from a cloud storage URL.
+    
+    Parameters:
+    - url (str): The URL of the file to download.
+    - folder_name (str): The folder where the dataset will be extracted.
+    
+    Raises:
+    - FileNotFoundError: If the downloaded file cannot be found.
+    - zipfile.BadZipFile: If the ZIP file is invalid or corrupted.
+    """
+
+    # Name of the ZIP file to save locally
+    dataset_zip = f"{folder_name}.zip"
+    os.makedirs(folder_name, exist_ok=True)
+
+    # Download the ZIP file
+    gdown.download(url, dataset_zip, quiet=False)
+    
+    # Extract the contents
+    with zipfile.ZipFile(dataset_zip, "r") as zip_ref:
+        zip_ref.extractall(folder_name)
+
+    # Delete the ZIP file
+    os.remove(dataset_zip)
 
 class MyDataset(Dataset):
     """
@@ -373,6 +404,11 @@ def image_inference(model: nn.Sequential, before_trans: callable, image: str) ->
     return predicted_class
 
 def main():
+    # Step 0: Download the dataset from the cloud
+    url = "https://drive.google.com/uc?export=download&id=1gf7kRHhQDWtTWKMJBeRdCBmtCzaAAxMb"
+    folder_name = "data"
+    download_dataset_from_cloud(url, folder_name)
+    
     # Step 1: Download the pretrained VGG16 model and its associated weights
     vgg_model, weights = download_pretrained_model()
 
