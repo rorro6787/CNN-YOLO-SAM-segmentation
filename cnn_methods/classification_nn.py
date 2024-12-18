@@ -431,12 +431,12 @@ def main():
     )
 
     # Step 7: Define image file paths for inference
-    freshbanana = "/images/banana.jpg"
-    freshapple = "/images/apple.jpg"
-    freshorange = "/images/orange.png"
-    rottenapple = "/images/rottenapple.jpg"
-    rottenbanana = "/images/rottenbanana.png"
-    rottenorange = "/images/rottenorange.jpg"
+    freshbanana = "images/banana.jpg"
+    freshapple = "images/apple.jpg"
+    freshorange = "images/orange.png"
+    rottenapple = "images/rottenapple.jpg"
+    rottenbanana = "images/rottenbanana.png"
+    rottenorange = "images/rottenorange.jpg"
 
     # List of test images to classify
     images = [freshbanana, freshapple, freshorange, rottenbanana, rottenapple, rottenorange]
