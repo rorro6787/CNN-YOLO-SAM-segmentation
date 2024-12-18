@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "cnn-methods"
-version = "1.0.3"
+version = "1.0.4"
 description = "Deep learning project for object classification, detection and classification using YOLO and SAM"
 readme = "README.md"
 dependencies = [

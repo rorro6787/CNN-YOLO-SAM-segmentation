@@ -13,16 +13,16 @@ Additionally, the project integrates a YOLO (You Only Look Once) model for real-
 Installation
 ============
 
-.. warning:: 
-   **Beta Version**  
-   This project is currently in **beta version**. and still has work in progress. We recommend referring to the section  `How to Jupyter <configure/configuration.html>`_  for detailed instructions.
-
 To install the project, you need to clone the repository and install the required dependencies. You will need to have Python 3.8 or higher installed on your system. Before installing the project, we recommend creating a virtual environment to avoid conflicts with other Python projects:
 
 .. code-block:: bash
 
    python3 -m venv venv
    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+   
+.. warning:: 
+   **Beta Version**  
+   This project is currently in **beta version**. and still has work in progress. We recommend referring to the section  `How to Jupyter <configure/configuration.html>`_  for detailed instructions.
 
 Once you have activated the virtual environment, you can install the project dependencies using the following command:
 
