@@ -13,13 +13,25 @@ Additionally, the project integrates a YOLO (You Only Look Once) model for real-
 Installation
 ============
 
+Before installing, your system must satisfy these minimum requirements:
+
+- **Python**: >=3.8
+- **Linux / MacOS**: Windows is not supported because the triton package is not available for Windows and we use it for GPU acceleration. We recommend Google Colab to Windows users.
+
+
 To install the project, you need to clone the repository and install the required dependencies. You will need to have Python 3.8 or higher installed on your system. Before installing the project, we recommend creating a virtual environment to avoid conflicts with other Python projects:
 
 .. code-block:: bash
 
    python3 -m venv venv
    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
-   
+
+If you want to use the CNN visualization tools, you will need to install the `graphviz` package. You can install it using the following command:
+
+.. code-block:: bash
+
+   sudo apt-get install graphviz
+
 .. warning:: 
    **Beta Version**  
    This project is currently in **beta version**. and still has work in progress. We recommend referring to the section  `How to Jupyter <configure/configuration.html>`_  for detailed instructions.

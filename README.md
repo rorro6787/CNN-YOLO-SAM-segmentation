@@ -16,9 +16,10 @@ Additionally, the project integrates a YOLO (You Only Look Once) model for real-
 
 ## Requirements
 - Python 3.X.X
+- Linux / MacOS
 
 ## Installation and Usage
-Read the library's documentation where it is explained how to download and use the different feautures it provides: [Official Documentation](https://rorro6787.github.io/CNN-YOLO-SAM-segmentation/)
+For a detailed walkthrough of the steps to install and use the Python package and Jupyter notebooks, refer to the official library's documentation here: [Official Documentation](https://rorro6787.github.io/CNN-YOLO-SAM-segmentation/)
 
 ## Contributors
 - [![GitHub](https://img.shields.io/badge/GitHub-100000?style=flat&logo=github&logoColor=white)](https://github.com/rorro6787) [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/emilio-rodrigo-carreira-villalta-2a62aa250/) **Emilio Rodrigo Carreira Villalta**
