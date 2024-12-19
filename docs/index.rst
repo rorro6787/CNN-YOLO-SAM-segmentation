@@ -34,7 +34,7 @@ If you want to use the CNN visualization tools, you will need to install the `gr
 
 .. warning:: 
    **Beta Version**  
-   This project is currently in **beta version**. and still has work in progress. We recommend referring to the section  `How to Jupyter <configure/configuration.html>`_  for detailed instructions.
+   This project is currently in **beta version** and still has work in progress. We recommend referring to the section  `How to Jupyter <configure/configuration.html>`_  for detailed instructions.
 
 Once you have activated the virtual environment, you can install the project dependencies using the following command:
 
