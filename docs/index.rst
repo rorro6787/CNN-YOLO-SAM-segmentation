@@ -16,7 +16,7 @@ Installation
 Before installing, your system must satisfy these minimum requirements:
 
 - **Python**: >=3.8
-- **Linux / MacOS**: Windows is not supported because the triton package is not available for Windows and we use it for GPU acceleration. We recommend Google Colab to Windows users.
+- **Linux / MacOS**: Windows is not supported because the triton package is not available for Windows and we use it for GPU acceleration. We recommend `Google Colab <https://colab.research.google.com>`_ to Windows users.
 
 
 To install the project, you need to clone the repository and install the required dependencies. You will need to have Python 3.8 or higher installed on your system. Before installing the project, we recommend creating a virtual environment to avoid conflicts with other Python projects:
