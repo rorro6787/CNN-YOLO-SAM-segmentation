@@ -14,6 +14,7 @@ Once you have cloned the repository, you will have to install the extra dependen
 
     pip install hatch
     hatch build && pip install $(find dist -name "*.tar.gz")
+    pip install jupyterlab
 
 Finally, you just have to navigate to the different notebooks that are located in the `notebooks` directory and choose the Jupyter kernel to run them, or you can also run the following command to open the Jupyter lab:
 
